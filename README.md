@@ -45,6 +45,6 @@ Java define la sintaxis y la semántica del lenguaje de programación Java. Esto
 La máquina virtual Java actúa como una capa de abstracción adicional entre la plataforma Java y el hardware de la máquina subyacente. El código fuente de Java solo puede ejecutarse en aquellas máquinas que tienen JVM instalada. La respuesta a por qué se necesita la máquina virtual de Java se encuentra en la historia de la programación.
 
 # Enlaces externos
-https://www.java.com/es/download/help/whatis_java.html
-https://aws.amazon.com/es/what-is/java/
-https://es.wikipedia.org/wiki/Java_(lenguaje_de_programaci%C3%B3n)
+- https://www.java.com/es/download/help/whatis_java.html
+- https://aws.amazon.com/es/what-is/java/
+- https://es.wikipedia.org/wiki/Java_(lenguaje_de_programaci%C3%B3n)
