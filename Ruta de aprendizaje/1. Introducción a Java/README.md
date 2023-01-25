@@ -1,5 +1,6 @@
-![3](https://user-images.githubusercontent.com/75398496/207724942-63144136-1e1f-45c7-83bd-e588e19cf692.png)
 # Introducción
+
+![3](https://user-images.githubusercontent.com/75398496/207724942-63144136-1e1f-45c7-83bd-e588e19cf692.png)
 
 Java es un lenguaje de programación de alto nivel y plataforma independiente desarrollado por Sun Microsystems (ahora propiedad de Oracle) en 1995. Es uno de los lenguajes de programación más populares y ampliamente utilizados en todo el mundo, y su plataforma independiente lo hace ideal para desarrollar aplicaciones que se ejecutan en múltiples sistemas operativos.
 
