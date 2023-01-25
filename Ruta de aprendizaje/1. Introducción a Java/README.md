@@ -1,8 +1,16 @@
+![3](https://user-images.githubusercontent.com/75398496/207724942-63144136-1e1f-45c7-83bd-e588e19cf692.png)
 # Introducción a Java
+
+Java es un lenguaje de programación de alto nivel y plataforma independiente desarrollado por Sun Microsystems (ahora propiedad de Oracle) en 1995. Es uno de los lenguajes de programación más populares y ampliamente utilizados en todo el mundo, y su plataforma independiente lo hace ideal para desarrollar aplicaciones que se ejecutan en múltiples sistemas operativos.
 
 ## Historia
 
 Java fue creado por James Gosling y sus colegas en Sun Microsystems en 1991 con el nombre "Oak". El objetivo original era crear un lenguaje para programar electrodomésticos y dispositivos de televisión interactivos. Sin embargo, debido a la falta de interés en estos dispositivos, el equipo de desarrollo decidió enfocarse en el desarrollo de un lenguaje de programación de uso general. Java fue lanzado al público en 1995 como un lenguaje de programación para aplicaciones de escritorio y servidores.
+
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/75398496/214674990-b599e1b0-a93d-42b0-89ed-bb3689147114.jpg" width=400px></img>
+  <p style="font-size:20px;">Sun Microsystems</p>
+</div>
 
 ## Características
 
