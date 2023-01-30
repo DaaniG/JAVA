@@ -1,8 +1,6 @@
-
+<h1 align="center">INTRODUCCIÓN A JAVA</h1>
 
 ![3](https://user-images.githubusercontent.com/75398496/207724942-63144136-1e1f-45c7-83bd-e588e19cf692.png)
-
-# Introducción
 
 Java es un lenguaje de programación de alto nivel y orientado a objetos desarrollado por Sun Microsystems (ahora propiedad de Oracle) en 1995. Fue diseñado para ser independiente de la arquitectura de la computadora, lo que significa que un programa escrito en Java debe funcionar en cualquier sistema operativo que tenga una máquina virtual Java (JVM) instalada.
 
