@@ -1,4 +1,4 @@
-<h1 align="center">INTRODUCCIÓN A JAVA</h1>
+<h1 align="center">Introducción a Java</h1>
 
 ![3](https://user-images.githubusercontent.com/75398496/207724942-63144136-1e1f-45c7-83bd-e588e19cf692.png)
 
@@ -9,7 +9,7 @@ Java es utilizado ampliamente en la programación de aplicaciones de escritorio,
 Java se caracteriza por su seguridad, portabilidad y escalabilidad, lo que lo convierte en una excelente opción para proyectos de gran envergadura. Es un lenguaje de programación de propósito general, lo que significa que puede ser utilizado para desarrollar una variedad de aplicaciones.
 
 
-# Historia
+## Historia
 
 La historia de Java comienza en 1991, cuando un equipo de ingenieros de Sun Microsystems, liderado por James Gosling, comenzó a trabajar en un proyecto llamado "Green" con el objetivo de desarrollar un lenguaje de programación que se ejecutara en una variedad de dispositivos electrónicos, incluyendo televisores, electrodomésticos y teléfonos celulares.
 
@@ -47,7 +47,7 @@ En 2021, Oracle lanzó Java 15, que incluyó varias características nuevas y me
 En 2022, Oracle lanzó Java 16, se espera que incluya mejoras en el rendimiento, correcciones de errores y nuevas características, como el soporte para sealed classes.
 
 
-# Características
+## Características
 
 - Plataforma independiente: Java es independiente de la plataforma, lo que significa que un programa escrito en Java puede ejecutarse en cualquier sistema operativo que tenga una JVM (máquina virtual de Java) instalada.
 
