@@ -1,5 +1,7 @@
 <h1 align="center">Configuración del entorno de desarrollo</h1>
 
+![Banner Linkedin](https://user-images.githubusercontent.com/75398496/215563097-079b011e-2ab7-4a1d-a352-369e5cd2702a.png)
+
 ## ¿Para qué sirve?
 
 La configuración del entorno de desarrollo es esencial para poder desarrollar y ejecutar aplicaciones Java en un sistema. Al configurar correctamente el entorno de Java, se asegura de que su sistema tenga acceso a todas las herramientas y componentes necesarios para el desarrollo Java, como el Java Development Kit (JDK), la máquina virtual de Java (JVM) y las bibliotecas Java.
@@ -7,6 +9,8 @@ La configuración del entorno de desarrollo es esencial para poder desarrollar y
 Además, la configuración del entorno de Java también permite que su sistema sepa dónde encontrar y utilizar las herramientas y componentes necesarios para el desarrollo Java. Esto se logra estableciendo y configurando variables de entorno, como JAVA_HOME y PATH, que permiten a su sistema encontrar y utilizar fácilmente el JDK y otras herramientas Java.
 
 En resumen, la configuración del entorno de Java es importante porque permite a su sistema tener acceso a las herramientas y componentes necesarios para el desarrollo Java y le permite a usted, como desarrollador, escribir y ejecutar aplicaciones Java de manera efectiva.
+
+## Configuración
 
 La configuración del entorno de Java varía dependiendo del sistema operativo que esté utilizando. Vamos a seguir los siguientes pasos:
 
