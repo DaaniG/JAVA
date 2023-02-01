@@ -1,5 +1,3 @@
-<h1 align="center">Introducción a Java</h1>
-
 ![Banner Linkedin (1)](https://user-images.githubusercontent.com/75398496/215572360-b564d39a-0cc6-430a-8254-c7fe58533628.png)
 
 ## ¿Qué es Java?
