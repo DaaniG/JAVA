@@ -43,7 +43,7 @@ int[] numeros = {10, 20, 30, 40, 50};
 Los comentarios en Java son textos que describen y documentan el código y se ignoran en tiempo de ejecución. Hay dos tipos de comentarios en Java: los comentarios de línea y los comentarios de bloque, y también se pueden utilizar JavaDoc para generar documentación en línea.
 
 ```java
-*/ Esto es un comentario */
+/* Esto es un comentario */
 ```
 
 En resumen, estos son los conceptos básicos de Java que debes conocer para escribir programas efectivos y bien estructurados.
