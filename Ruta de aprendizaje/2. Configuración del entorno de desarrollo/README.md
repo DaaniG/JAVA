@@ -1,5 +1,3 @@
-<h1 align="center">Configuración del entorno de desarrollo</h1>
-
 ![Banner Linkedin](https://user-images.githubusercontent.com/75398496/215563097-079b011e-2ab7-4a1d-a352-369e5cd2702a.png)
 
 ## ¿Para qué sirve?
