@@ -3,6 +3,7 @@
 ![Banner Linkedin (2)](https://user-images.githubusercontent.com/75398496/215573266-53ec87c6-2796-499b-8133-5290632a5868.png)
 
 - Variables y tipos de datos
+Primitivos y no primitivos
 - Operadores y expresiones
 - Estructuras de control de flujo (if-else, switch, for, while, do-while)
 - Arrays y colecciones (List, Set, Map)
