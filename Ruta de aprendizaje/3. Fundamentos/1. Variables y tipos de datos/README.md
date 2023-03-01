@@ -24,13 +24,16 @@ result -= 5 // result = 2
 ```
 
 ## Operadores de comparación:
-Se utilizan para comparar dos valores. Incluyen:
-- Igualdad (==): se utiliza para comprobar si dos valores son iguales.
-- Desigualdad (!=): se utiliza para comprobar si dos valores son diferentes.
-- Mayor que (>): se utiliza para comprobar si un valor es mayor que otro.
-- Menor que (<): se utiliza para comprobar si un valor es menor que otro.
-- Mayor o igual que (>=): se utiliza para comprobar si un valor es mayor o igual que otro.
-- Menor o igual que (<=): se utiliza para comprobar si un valor es menor o igual que otro.
+Se utilizan para comparar dos valores. Ejemplo:
+``` java
+/* Desigualdad (!=): se utiliza para comprobar si dos valores son diferentes.
+asignar el resultado a la misma variable. */
+
+int result = 2;
+if(result != 5) {
+    System.out.println("Los números no son iguales.");
+}
+```
 
 ## Operadores lógicos:
 Se utilizan para combinar expresiones lógicas. Incluyen:
