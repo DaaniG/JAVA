@@ -8,7 +8,7 @@ A continuación se describen los principales operadores y expresiones en Java:
 Se utilizan para realizar operaciones matemáticas básicas. Ejemplo:
 
 ``` Java
-// Suma
+// Suma (+):
 int result = 3 + 4;
 ```
 
