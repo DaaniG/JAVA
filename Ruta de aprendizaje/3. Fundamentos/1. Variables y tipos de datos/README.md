@@ -8,18 +8,20 @@ A continuación se describen los principales operadores y expresiones en Java:
 Se utilizan para realizar operaciones matemáticas básicas. Ejemplo:
 
 ``` java
-// Suma (+): se utiliza para sumar dos valores.
-int result = 3 + 4;
+/* Suma (+): se utiliza para sumar dos valores. */
+
+int result = 3 + 4; // result = 7
 ```
 
 ## Operadores de asignación:
-Se utilizan para asignar valores a variables. Incluyen:
-- Asignación (=): se utiliza para asignar un valor a una variable.
-- Asignación de suma (+=): se utiliza para sumar un valor a una variable y asignar el resultado a la misma variable.
-- Asignación de resta (-=): se utiliza para restar un valor a una variable y asignar el resultado a la misma variable.
-- Asignación de multiplicación (*=): se utiliza para multiplicar una variable por un valor y asignar el resultado a la misma variable.
-- Asignación de división (/=): se utiliza para dividir una variable por un valor y asignar el resultado a la misma variable.
-- Asignación de módulo (%=): se utiliza para obtener el resto de una división de una variable por un valor y asignar el resultado a la misma variable.
+Se utilizan para asignar valores a variables. Ejemplo:
+``` java
+/* Asignación de resta (-=): se utiliza para restar un valor a una variable y 
+asignar el resultado a la misma variable. */
+
+int result = 7;
+result -= 5 // result = 2
+```
 
 ## Operadores de comparación:
 Se utilizan para comparar dos valores. Incluyen:
