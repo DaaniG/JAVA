@@ -36,40 +36,79 @@ if(result != 5) {
 ```
 
 ## Operadores lógicos:
-Se utilizan para combinar expresiones lógicas. Incluyen:
-- AND lógico (&&): se utiliza para comprobar si dos expresiones son verdaderas.
-- OR lógico (||): se utiliza para comprobar si al menos una de dos expresiones es verdadera.
-- NOT lógico (!): se utiliza para negar el resultado de una expresión.
+Se utilizan para combinar expresiones lógicas. Ejemplo:
+``` java
+/* NOT lógico (!): se utiliza para negar el resultado de una expresión. */
+
+boolean tmp = false;
+if(!tmp) { // Si el negativo de tmp es true
+    System.out.println("Verdadero.");
+}
+```
 
 ## Operadores bit a bit:
-Se utilizan para manipular bits individuales en un valor. Incluyen:
-- AND bit a bit (&): se utiliza para realizar una operación AND en cada bit de dos valores.
-- OR bit a bit (|): se utiliza para realizar una operación OR en cada bit de dos valores.
-- XOR bit a bit (^): se utiliza para realizar una operación XOR en cada bit de dos valores.
-- Desplazamiento a la izquierda (<<): se utiliza para desplazar los bits de un valor hacia la izquierda un número determinado de posiciones.
-- Desplazamiento a la derecha (>>): se utiliza para desplazar los bits de un valor hacia la derecha un número determinado de posiciones.
+Se utilizan para manipular bits individuales en un valor. Ejemplo:
+``` java
+/* XOR bit a bit (^): se utiliza para realizar una operación XOR en cada bit de dos valores. */
+
+int a = 7; // 0111 en binario
+int b = 10; // 1010 en binario
+
+int result = a ^ b; // XOR bit a bit
+
+System.out.println("El resultado de a XOR b es: " + result); // result =  13 (1101 en binario)
+```
 
 ## Operadores de incremento/decremento:
-Se utilizan para incrementar o decrementar el valor de una variable. Incluyen:
-- Incremento (++): se utiliza para aumentar el valor de una variable en 1.
-- Decremento (--): se utiliza para disminuir el valor de una variable en 1.
+Se utilizan para incrementar o decrementar el valor de una variable. Ejemplo:
+``` java
+/* Decremento (--): se utiliza para disminuir el valor de una variable en 1. */
+
+int a = 2;
+a--; // a = 1;
+```
 
 ## Operadores condicionales:
-Se utilizan para realizar operaciones condicionales. Incluyen:
-- Operador ternario (?): se utiliza para hacer una evaluación condicional en una sola línea de código. La sintaxis es: condición ? expresión1 : expresión2. Si la condición es verdadera, se devuelve la expresión1, de lo contrario se devuelve la expresión2.
-- Null coalescing operator (??): se utiliza para devolver el valor de una expresión si no es nulo, de lo contrario devuelve un valor predeterminado. La sintaxis es: expresión1 ?? expresión2. Si la expresión1 no es nula, se devuelve la expresión1, de lo contrario se devuelve la expresión2.
+Se utilizan para realizar operaciones condicionales. Ejemplo:
+``` java
+/* Operador ternario (?): se utiliza para hacer una evaluación condicional en una sola línea de código. */
+
+boolean result = 4 < 5 ? true : false; // result = true
+```
 
 ## Operadores de instancia y de tipo:
-Se utilizan para comprobar si un objeto es de cierto tipo. Incluyen:
-- Operador de instancia (instanceof): se utiliza para comprobar si un objeto es de una clase o de una subclase particular. La sintaxis es: objeto instanceof Clase.
-- Operador de tipo (typeof): se utiliza para obtener el tipo de datos de una expresión. La sintaxis es: typeof(expresión).
+Se utilizan para comprobar si un objeto es de cierto tipo. Ejemplo:
+``` java
+/* Operador de instancia (instanceof): se utiliza para comprobar si un objeto 
+es de una clase o de una subclase particular. 
+Supongamos que tenemos una clase llamada Persona y otra clase llamada Empleado 
+que extiende la clase Persona. */
+
+Persona persona = new Empleado("Juan", "Perez", 35, "Desarrollador");
+if (persona instanceof Empleado) {
+    System.out.println("La persona es un empleado");
+}
+```
 
 ## Operadores de concatenación:
-Se utilizan para concatenar cadenas de caracteres. Incluyen:
-- Concatenación (+): se utiliza para unir dos cadenas de caracteres. Si uno de los operandos es una cadena, Java convierte automáticamente el otro operando en una cadena antes de realizar la concatenación.
+Se utilizan para concatenar cadenas de caracteres. Ejemplo:
+``` java
+/* Concatenación (+): se utiliza para unir dos cadenas de caracteres. */
+
+String name = "Tito";
+String surname = "Dev";
+String fullName = name + surname;
+
+System.out.println("El nombre completo es: " + fullName); // El nombre completo es: TitoDev
+```
 
 ## Operadores de expresiones regulares:
-Se utilizan para realizar búsquedas de patrones en cadenas de caracteres. Incluyen:
+Se utilizan para realizar búsquedas de patrones en cadenas de caracteres. Ejemplo:
+``` java
+/* Suma (+): se utiliza para sumar dos valores. */
+
+int result = 3 + 4; // result = 7
+```
 - Expresión regular (~): se utiliza para buscar patrones en una cadena de caracteres. La sintaxis es: cadena ~ patrón.
 
 Es importante mencionar que el orden de evaluación de las expresiones en Java está determinado por la precedencia de los operadores. Por lo general, los operadores con mayor precedencia se evalúan primero. Sin embargo, se puede utilizar paréntesis para forzar un orden de evaluación diferente.
