@@ -58,7 +58,8 @@ Se utilizan para incrementar o decrementar el valor de una variable. Incluyen:
 Se utilizan para realizar operaciones condicionales. Incluyen:
 - Operador ternario (?): se utiliza para hacer una evaluación condicional en una sola línea de código. La sintaxis es: condición ? expresión1 : expresión2. Si la condición es verdadera, se devuelve la expresión1, de lo contrario se devuelve la expresión2.
 - Null coalescing operator (??): se utiliza para devolver el valor de una expresión si no es nulo, de lo contrario devuelve un valor predeterminado. La sintaxis es: expresión1 ?? expresión2. Si la expresión1 no es nula, se devuelve la expresión1, de lo contrario se devuelve la expresión2.
-### Operadores de instancia y de tipo:
+
+## Operadores de instancia y de tipo:
 Se utilizan para comprobar si un objeto es de cierto tipo. Incluyen:
 - Operador de instancia (instanceof): se utiliza para comprobar si un objeto es de una clase o de una subclase particular. La sintaxis es: objeto instanceof Clase.
 - Operador de tipo (typeof): se utiliza para obtener el tipo de datos de una expresión. La sintaxis es: typeof(expresión).
