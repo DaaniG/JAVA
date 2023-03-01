@@ -1,6 +1,4 @@
-<h1 align="center">Fundamentos</h1>
-
-![Banner Linkedin (2)](https://user-images.githubusercontent.com/75398496/215573266-53ec87c6-2796-499b-8133-5290632a5868.png)
+![23](https://user-images.githubusercontent.com/75398496/222225800-83a5fa0a-f524-4c31-af86-9bc65526141a.png)
 
 - Variables y tipos de datos
 - Operadores y expresiones

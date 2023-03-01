@@ -1,7 +1,4 @@
-<h1 align="center">Fundamentos</h1>
-
-![Banner Linkedin (2)](https://user-images.githubusercontent.com/75398496/215573266-53ec87c6-2796-499b-8133-5290632a5868.png)
-
+![22](https://user-images.githubusercontent.com/75398496/222225672-87fae5f8-8acd-4456-a070-a66638e13794.png)
 - Variables y tipos de datos
 - Operadores y expresiones
 - Estructuras de control de flujo (if-else, switch, for, while, do-while)
