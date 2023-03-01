@@ -1,17 +1,16 @@
 ![21](https://user-images.githubusercontent.com/75398496/222225574-0ceb641f-e502-459b-bf59-40941c0a6a01.png)
 
-
 En Java, los operadores son símbolos que representan una acción que se realizará sobre uno o más valores. Las expresiones son combinaciones de operadores y operandos que se evalúan para producir un valor.
 
 A continuación se describen los principales operadores y expresiones en Java:
 
 ## Operadores aritméticos:
-Se utilizan para realizar operaciones matemáticas básicas. Incluyen:
-- Suma (+): se utiliza para sumar dos valores.
-- Resta (-): se utiliza para restar un valor de otro.
-- Multiplicación (*): se utiliza para multiplicar dos valores.
-- División (/): se utiliza para dividir un valor por otro.
-- Módulo (%): se utiliza para obtener el resto de una división.
+Se utilizan para realizar operaciones matemáticas básicas. Ejemplo:
+
+``` Java
+// Suma
+int result = 3 + 4;
+```
 
 ## Operadores de asignación:
 Se utilizan para asignar valores a variables. Incluyen:
