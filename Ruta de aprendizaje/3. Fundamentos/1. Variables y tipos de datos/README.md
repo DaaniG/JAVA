@@ -102,13 +102,4 @@ String fullName = name + surname;
 System.out.println("El nombre completo es: " + fullName); // El nombre completo es: TitoDev
 ```
 
-## Operadores de expresiones regulares:
-Se utilizan para realizar búsquedas de patrones en cadenas de caracteres. Ejemplo:
-``` java
-/* Suma (+): se utiliza para sumar dos valores. */
-
-int result = 3 + 4; // result = 7
-```
-- Expresión regular (~): se utiliza para buscar patrones en una cadena de caracteres. La sintaxis es: cadena ~ patrón.
-
 Es importante mencionar que el orden de evaluación de las expresiones en Java está determinado por la precedencia de los operadores. Por lo general, los operadores con mayor precedencia se evalúan primero. Sin embargo, se puede utilizar paréntesis para forzar un orden de evaluación diferente.
