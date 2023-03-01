@@ -7,8 +7,8 @@ A continuación se describen los principales operadores y expresiones en Java:
 ## Operadores aritméticos:
 Se utilizan para realizar operaciones matemáticas básicas. Ejemplo:
 
-``` Java
-// Suma (+):
+``` java
+// Suma (+): se utiliza para sumar dos valores.
 int result = 3 + 4;
 ```
 
