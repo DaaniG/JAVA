@@ -23,7 +23,7 @@ int suma = 3 + 4;
 Las estructuras de control de flujo en Java permiten controlar el flujo de ejecución de un programa. Estas incluyen if-else, switch, for, while y do-while, que permiten ejecutar diferentes bloques de código en función de ciertas condiciones.
 
 ```java
-if (3 < 5) {
+if(3 < 5) {
     System.out.println("Es menor");
 } else {
     System.out.println("Es mayor");
