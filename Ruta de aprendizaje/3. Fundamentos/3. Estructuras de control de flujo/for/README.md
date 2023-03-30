@@ -1,30 +1,31 @@
-![23](https://user-images.githubusercontent.com/75398496/222225800-83a5fa0a-f524-4c31-af86-9bc65526141a.png)
+# La estructura for en Java:
+Se utiliza para repetir una sección de código un número específico de veces. La sintaxis básica de la estructura for en Java es la siguiente:
+```java
+for (inicialización; condición; actualización) {
+    // código a ejecutar en cada iteración
+}
+```
+La inicialización se utiliza para establecer el valor inicial de una variable de control. La condición es una expresión que se evalúa antes de cada iteración y, si es verdadera, se ejecuta el código dentro del bucle. La actualización se utiliza para cambiar el valor de la variable de control después de cada iteración.
 
-- Variables y tipos de datos
-- Operadores y expresiones
-- Estructuras de control de flujo (if-else, switch, for, while, do-while)
-- Arrays y colecciones (List, Set, Map)
-- Comentarios
-    - Uso de los comentarios de línea
-    - Uso de los comentarios de bloque
-    - JavaDoc
+También se pueden utilizar estructuras for anidadas para realizar iteraciones más complejas. La sintaxis básica de una estructura for anidada es la siguiente:
+```java
+for (inicialización1; condición1; actualización1) {
+    for (inicialización2; condición2; actualización2) {
+        // código a ejecutar en cada iteración
+    }
+}
+```
 
-POO
-- Clases y objetos
-- Métodos y funciones
-- Constructores
-- Paquetes y módulos
-- Encapsulación
-- Herencia
-- Polimorfismo
-- Interfaces
+Ejemplo:
 
-Avanzado
-- Excepciones
-- Threads
-- Sockets y comunicación en red
-- Ficheros y entrada/salida (I/O)
-- Reflection
-- Generics
-- Anotaciones (annotations)
-- Lambdas y funciones
+```java
+public class Main {
+    public static void main(String[] args) {
+        for (int i = 1; i <= 10; i++) {
+            System.out.println(i);
+        }
+    }
+}
+```
+
+En este ejemplo, se utiliza la estructura for para imprimir los números del 1 al 10 en la consola. La variable de control "i" se inicializa en 1, se evalúa la condición "i <= 10" antes de cada iteración, y se incrementa en 1 después de cada iteración.

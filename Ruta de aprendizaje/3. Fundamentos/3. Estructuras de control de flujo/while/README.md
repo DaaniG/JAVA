@@ -1,30 +1,35 @@
-![23](https://user-images.githubusercontent.com/75398496/222225800-83a5fa0a-f524-4c31-af86-9bc65526141a.png)
+# La estructura while en Java:
+Se utiliza para repetir una sección de código mientras se cumple una condición. La sintaxis básica de la estructura while en Java es la siguiente:
 
-- Variables y tipos de datos
-- Operadores y expresiones
-- Estructuras de control de flujo (if-else, switch, for, while, do-while)
-- Arrays y colecciones (List, Set, Map)
-- Comentarios
-    - Uso de los comentarios de línea
-    - Uso de los comentarios de bloque
-    - JavaDoc
+```java
+while (condición) {
+    // código a ejecutar mientras la condición sea verdadera
+}
+```
+El código dentro de las llaves se ejecuta solo si la condición es verdadera. Si la condición es falsa desde el principio, el código dentro de las llaves nunca se ejecutará.
 
-POO
-- Clases y objetos
-- Métodos y funciones
-- Constructores
-- Paquetes y módulos
-- Encapsulación
-- Herencia
-- Polimorfismo
-- Interfaces
+Ejemplo:
+```java
+import java.util.Scanner;
 
-Avanzado
-- Excepciones
-- Threads
-- Sockets y comunicación en red
-- Ficheros y entrada/salida (I/O)
-- Reflection
-- Generics
-- Anotaciones (annotations)
-- Lambdas y funciones
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int numero;
+        
+        System.out.print("Introduce un número positivo: ");
+        numero = sc.nextInt();
+        
+        while (numero < 0) {
+            System.out.print("El número introducido es negativo. Introduce otro número: ");
+            numero = sc.nextInt();
+        }
+        
+        System.out.println("El número introducido es " + numero);
+    }
+}
+```
+
+En este ejemplo, se utiliza la estructura while para pedir al usuario que introduzca un número positivo. Si el número introducido es negativo, se le pedirá al usuario que introduzca otro número hasta que introduzca un número positivo.
+
+En este caso, la condición "numero < 0" se evalúa antes de entrar en el bucle. Si la condición es verdadera, se ejecuta el código dentro del bucle while y se le solicita al usuario que introduzca otro número. Este proceso se repite hasta que el usuario introduce un número positivo.
