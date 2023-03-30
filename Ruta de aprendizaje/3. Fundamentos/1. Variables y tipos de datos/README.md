@@ -3,51 +3,50 @@
 ## Variables:
 Las variables son contenedores de datos que se utilizan para almacenar valores en la memoria de un programa. En Java, se pueden declarar variables de diferentes tipos de datos.
 
+Ejemplo:
+
 ```java
 int edad = 25; // variable de tipo entero que almacena la edad
 double precio = 14.99; // variable de tipo decimal que almacena el precio
 String nombre = "Juan"; // variable de tipo cadena de caracteres que almacena el nombre
 ```
-## Tipos de datos en Java:
-Java cuenta con diferentes tipos de datos que se utilizan para almacenar diferentes tipos de valores. Algunos de los tipos de datos más comunes son:
+## Tipos de datos:
+En programación, los tipos de datos definen qué tipo de valores puede contener una variable y cómo se almacenan y manipulan esos valores en la memoria del programa. En Java, hay dos categorías principales de tipos de datos: los tipos de datos primitivos y los tipos de datos no primitivos.
 
-### Tipos de datos numéricos:
-Se utilizan para almacenar valores numéricos. Estos pueden ser enteros (int) o decimales (float, double).
+### Primitivos:
+Son tipos de datos simples que se utilizan para almacenar valores básicos. Los tipos de datos primitivos son ocho en total y se pueden clasificar en cuatro grupos:
 
-```java
-int edad = 25; // variable de tipo entero
-double precio = 14.99; // variable de tipo decimal
-```
-### Tipo de datos booleano:
-Se utiliza para almacenar valores lógicos. Puede tener solo dos valores: true o false.
+- Enteros: byte, short, int, long
+- Punto flotante: float, double
+- Caracteres: char
+- Booleanos: boolean
 
-```java
-boolean esMayorDeEdad = true; // variable de tipo booleano
-```
-### Tipo de datos de caracteres:
-Se utilizan para almacenar caracteres individuales. Se pueden declarar como tipo char.
+Los tipos de datos primitivos son inmutables, es decir, una vez que se les asigna un valor, no se pueden cambiar. También tienen una representación fija en memoria, lo que significa que se puede calcular la cantidad de memoria que utilizará cada tipo de dato primitivo.
 
-```java
-char letra = 'a'; // variable de tipo caracter
-```
-### Tipo de datos de cadenas de caracteres:
-Se utilizan para almacenar cadenas de caracteres. Se pueden declarar como tipo String.
+| Tipo de dato | Descripción                                         |
+|--------------|-----------------------------------------------------|
+| byte         | Almacena un valor entero de 8 bits                  |
+| short        | Almacena un valor entero de 16 bits                 |
+| int          | Almacena un valor entero de 32 bits                 |
+| long         | Almacena un valor entero de 64 bits                 |
+| float        | Almacena un valor de coma flotante de 32 bits       |
+| double       | Almacena un valor de coma flotante de 64 bits       |
+| boolean      | Almacena un valor booleano (true o false)           |
+| char         | Almacena un valor de carácter Unicode de 16 bits    |
 
-```java
-String nombre = "Juan"; // variable de tipo cadena de caracteres
-```
+### No primitivos:
+Son tipos de datos complejos que se utilizan para representar objetos y estructuras de datos. Los tipos de datos no primitivos se crean a partir de tipos de datos primitivos o de otros objetos y son variables que almacenan una referencia a un objeto en lugar de los datos del objeto en sí.
 
-### Tipo de datos de arrays:
-Se utilizan para almacenar conjuntos de valores. Pueden ser de un tipo de datos específico o una combinación de diferentes tipos de datos.
+Los tres tipos de datos no primitivos en Java son:
 
-```java
-int[] numeros = {1, 2, 3, 4, 5}; // array de tipo entero
-String[] nombres = {"Juan", "María", "Pedro"}; // array de tipo cadena de caracteres
-```
-Es importante mencionar que en Java, las variables deben ser declaradas antes de ser utilizadas. Además, cada variable tiene un ámbito (scope) que determina dónde puede ser accedida en el programa.
+- String: una secuencia de caracteres.
+- Arrays: una colección de elementos del mismo tipo.
+- Clases personalizadas: objetos personalizados creados por el usuario.
 
-También se pueden declarar variables constantes utilizando la palabra clave "final", lo que indica que su valor no puede ser modificado después de ser asignado.
+Los tipos de datos no primitivos son mutables, es decir, los valores que contienen pueden cambiar. Además, los tipos de datos no primitivos no tienen una representación fija en memoria, lo que significa que el tamaño de memoria que ocupan depende del objeto que estén almacenando y de su estado actual.
 
-```java
-final double PI = 3.1416; // variable constante de tipo decimal
-```
+| Tipo de dato         | Descripción                                               |
+|----------------------|-----------------------------------------------------------|
+| String               | Almacena una secuencia de caracteres                      |
+| Arrays               | Almacena una colección de elementos del mismo tipo        |
+| Clases personalizadas| Almacena objetos personalizados creados por el usuario    |
