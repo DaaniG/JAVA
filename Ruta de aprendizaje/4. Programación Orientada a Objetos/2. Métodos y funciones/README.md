@@ -3,6 +3,8 @@
 # Los métodos y funciones en Java:
 Son bloques de código reutilizable que se pueden llamar desde otros lugares en el programa. Los métodos y funciones permiten al programador dividir el código en fragmentos más pequeños y más manejables, lo que facilita el mantenimiento y la legibilidad del código.
 
+La diferencia entre método y función es más bien semántica y no hay una distinción técnica clara entre ambos términos. En general, se suele utilizar el término "método" para referirse a una función que está definida dentro de una clase, mientras que el término "función" se utiliza para referirse a una operación o algoritmo independiente que puede ser llamado desde cualquier parte del código.
+
 En Java, los métodos y funciones se definen dentro de una clase y se pueden llamar desde cualquier parte del programa. Los métodos y funciones pueden recibir argumentos o parámetros, y pueden devolver un valor de retorno o no.
 
 Los métodos y funciones se definen mediante la palabra clave "public" o "private", seguida del tipo de dato que devuelven (o la palabra clave "void" si no devuelven nada), seguido del nombre del método y una lista de argumentos entre paréntesis. Por ejemplo:
