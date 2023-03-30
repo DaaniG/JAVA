@@ -1,5 +1,9 @@
 ![23](https://user-images.githubusercontent.com/75398496/222225800-83a5fa0a-f524-4c31-af86-9bc65526141a.png)
 
+Las estructuras de control de flujo son herramientas fundamentales en la programación, ya que nos permiten controlar el flujo de ejecución de nuestro programa y tomar decisiones en función de diferentes situaciones.
+
+Existen varias estructuras de control de flujo en Java, como por ejemplo la estructura if-else, la estructura switch, la estructura for, la estructura while, la estructura do-while, la estructura break y la estructura continue.
+
 ## Estructura if-else:
 Esta estructura permite ejecutar diferentes bloques de código dependiendo del resultado de una condición.
 ```java
