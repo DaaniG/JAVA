@@ -18,7 +18,6 @@ if (edad >= 18) {
 Esta estructura permite evaluar diferentes casos y ejecutar diferentes bloques de código en función del valor de una variable. 
 ```java
 int diaSemana = 4;
-
 switch (diaSemana) {
     case 1:
         System.out.println("Lunes");
