@@ -53,6 +53,23 @@ for (int i = 0; i < 10; i++) {
 }
 ```
 
+## Estructura foreach:
+Esta estructura permite ejecutar un bloque de código varias veces, en función al tamaño de la lista.
+```java
+// Crear una lista de números enteros
+ArrayList<Integer> numeros = new ArrayList<Integer>();
+numeros.add(1);
+numeros.add(2);
+numeros.add(3);
+numeros.add(4);
+numeros.add(5);
+
+// Iterar sobre la lista utilizando la estructura foreach
+for (int numero : numeros) {
+    System.out.println(numero);
+}
+```
+
 ## Estructura while:
 Esta estructura permite ejecutar un bloque de código mientras se cumpla una condición.
 ```java
