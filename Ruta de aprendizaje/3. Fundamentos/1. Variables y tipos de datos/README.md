@@ -11,6 +11,8 @@ double precio = 14.99; // variable de tipo decimal que almacena el precio
 String nombre = "Juan"; // variable de tipo cadena de caracteres que almacena el nombre
 ```
 ## Tipos de datos:
+En programación, los tipos de datos definen qué tipo de valores puede contener una variable y cómo se almacenan y manipulan esos valores en la memoria del programa. En Java, hay dos categorías principales de tipos de datos: los tipos de datos primitivos y los tipos de datos no primitivos.
+
 ### Primitivos:
 Son tipos de datos simples que se utilizan para almacenar valores básicos. Los tipos de datos primitivos son ocho en total y se pueden clasificar en cuatro grupos:
 
