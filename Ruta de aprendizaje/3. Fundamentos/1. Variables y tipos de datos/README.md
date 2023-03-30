@@ -1,105 +1,53 @@
 ![21](https://user-images.githubusercontent.com/75398496/222225574-0ceb641f-e502-459b-bf59-40941c0a6a01.png)
 
-En Java, los operadores son símbolos que representan una acción que se realizará sobre uno o más valores. Las expresiones son combinaciones de operadores y operandos que se evalúan para producir un valor.
+## Variables:
+Las variables son contenedores de datos que se utilizan para almacenar valores en la memoria de un programa. En Java, se pueden declarar variables de diferentes tipos de datos.
 
-A continuación se describen los principales operadores y expresiones en Java:
+```java
+int edad = 25; // variable de tipo entero que almacena la edad
+double precio = 14.99; // variable de tipo decimal que almacena el precio
+String nombre = "Juan"; // variable de tipo cadena de caracteres que almacena el nombre
+```
+## Tipos de datos en Java:
+Java cuenta con diferentes tipos de datos que se utilizan para almacenar diferentes tipos de valores. Algunos de los tipos de datos más comunes son:
 
-## Operadores aritméticos:
-Se utilizan para realizar operaciones matemáticas básicas. Ejemplo:
+### Tipos de datos numéricos:
+Se utilizan para almacenar valores numéricos. Estos pueden ser enteros (int) o decimales (float, double).
 
-``` java
-/* Suma (+): se utiliza para sumar dos valores. */
+```java
+int edad = 25; // variable de tipo entero
+double precio = 14.99; // variable de tipo decimal
+```
+### Tipo de datos booleano:
+Se utiliza para almacenar valores lógicos. Puede tener solo dos valores: true o false.
 
-int result = 3 + 4; // result = 7
+```java
+boolean esMayorDeEdad = true; // variable de tipo booleano
+```
+### Tipo de datos de caracteres:
+Se utilizan para almacenar caracteres individuales. Se pueden declarar como tipo char.
+
+```java
+char letra = 'a'; // variable de tipo caracter
+```
+### Tipo de datos de cadenas de caracteres:
+Se utilizan para almacenar cadenas de caracteres. Se pueden declarar como tipo String.
+
+```java
+String nombre = "Juan"; // variable de tipo cadena de caracteres
 ```
 
-## Operadores de asignación:
-Se utilizan para asignar valores a variables. Ejemplo:
-``` java
-/* Asignación de resta (-=): se utiliza para restar un valor a una variable y 
-asignar el resultado a la misma variable. */
+### Tipo de datos de arrays:
+Se utilizan para almacenar conjuntos de valores. Pueden ser de un tipo de datos específico o una combinación de diferentes tipos de datos.
 
-int result = 7;
-result -= 5 // result = 2
+```java
+int[] numeros = {1, 2, 3, 4, 5}; // array de tipo entero
+String[] nombres = {"Juan", "María", "Pedro"}; // array de tipo cadena de caracteres
 ```
+Es importante mencionar que en Java, las variables deben ser declaradas antes de ser utilizadas. Además, cada variable tiene un ámbito (scope) que determina dónde puede ser accedida en el programa.
 
-## Operadores de comparación:
-Se utilizan para comparar dos valores. Ejemplo:
-``` java
-/* Desigualdad (!=): se utiliza para comprobar si dos valores son diferentes.
-asignar el resultado a la misma variable. */
+También se pueden declarar variables constantes utilizando la palabra clave "final", lo que indica que su valor no puede ser modificado después de ser asignado.
 
-int result = 2;
-if(result != 5) {
-    System.out.println("Los números no son iguales.");
-}
+```java
+final double PI = 3.1416; // variable constante de tipo decimal
 ```
-
-## Operadores lógicos:
-Se utilizan para combinar expresiones lógicas. Ejemplo:
-``` java
-/* NOT lógico (!): se utiliza para negar el resultado de una expresión. */
-
-boolean tmp = false;
-if(!tmp) { // Si el negativo de tmp es true
-    System.out.println("Verdadero.");
-}
-```
-
-## Operadores bit a bit:
-Se utilizan para manipular bits individuales en un valor. Ejemplo:
-``` java
-/* XOR bit a bit (^): se utiliza para realizar una operación XOR en cada bit de dos valores. */
-
-int a = 7; // 0111 en binario
-int b = 10; // 1010 en binario
-
-int result = a ^ b; // XOR bit a bit
-
-System.out.println("El resultado de a XOR b es: " + result); // result =  13 (1101 en binario)
-```
-
-## Operadores de incremento/decremento:
-Se utilizan para incrementar o decrementar el valor de una variable. Ejemplo:
-``` java
-/* Decremento (--): se utiliza para disminuir el valor de una variable en 1. */
-
-int a = 2;
-a--; // a = 1;
-```
-
-## Operadores condicionales:
-Se utilizan para realizar operaciones condicionales. Ejemplo:
-``` java
-/* Operador ternario (?): se utiliza para hacer una evaluación condicional en una sola línea de código. */
-
-boolean result = 4 < 5 ? true : false; // result = true
-```
-
-## Operadores de instancia y de tipo:
-Se utilizan para comprobar si un objeto es de cierto tipo. Ejemplo:
-``` java
-/* Operador de instancia (instanceof): se utiliza para comprobar si un objeto 
-es de una clase o de una subclase particular. 
-Supongamos que tenemos una clase llamada Persona y otra clase llamada Empleado 
-que extiende la clase Persona. */
-
-Persona persona = new Empleado("Juan", "Perez", 35, "Desarrollador");
-if (persona instanceof Empleado) {
-    System.out.println("La persona es un empleado");
-}
-```
-
-## Operadores de concatenación:
-Se utilizan para concatenar cadenas de caracteres. Ejemplo:
-``` java
-/* Concatenación (+): se utiliza para unir dos cadenas de caracteres. */
-
-String name = "Tito";
-String surname = "Dev";
-String fullName = name + surname;
-
-System.out.println("El nombre completo es: " + fullName); // El nombre completo es: TitoDev
-```
-
-Es importante mencionar que el orden de evaluación de las expresiones en Java está determinado por la precedencia de los operadores. Por lo general, los operadores con mayor precedencia se evalúan primero. Sin embargo, se puede utilizar paréntesis para forzar un orden de evaluación diferente.
