@@ -1,53 +1,53 @@
-![21](https://user-images.githubusercontent.com/75398496/222225574-0ceb641f-e502-459b-bf59-40941c0a6a01.png)
+![noprimitivos](https://user-images.githubusercontent.com/75398496/228880203-3a56c15a-73e9-4b97-9375-63196183e2ff.png)
 
-## Variables:
-Las variables son contenedores de datos que se utilizan para almacenar valores en la memoria de un programa. En Java, se pueden declarar variables de diferentes tipos de datos.
+Los tipos de datos no primitivos en Java son tipos de datos que no son definidos por el lenguaje en sí mismo, sino que son definidos por el programador o se incluyen en la biblioteca estándar de Java. A diferencia de los tipos de datos primitivos, que tienen un tamaño fijo y un conjunto limitado de valores, los tipos de datos no primitivos pueden ser de cualquier tamaño y contener cualquier tipo de datos.
 
+### String:
+Es una secuencia de caracteres. A diferencia de los tipos primitivos, que son palabras clave del lenguaje, el tipo de datos String se define en la biblioteca estándar de Java.
 ```java
-int edad = 25; // variable de tipo entero que almacena la edad
-double precio = 14.99; // variable de tipo decimal que almacena el precio
-String nombre = "Juan"; // variable de tipo cadena de caracteres que almacena el nombre
-```
-## Tipos de datos en Java:
-Java cuenta con diferentes tipos de datos que se utilizan para almacenar diferentes tipos de valores. Algunos de los tipos de datos más comunes son:
-
-### Tipos de datos numéricos:
-Se utilizan para almacenar valores numéricos. Estos pueden ser enteros (int) o decimales (float, double).
-
-```java
-int edad = 25; // variable de tipo entero
-double precio = 14.99; // variable de tipo decimal
-```
-### Tipo de datos booleano:
-Se utiliza para almacenar valores lógicos. Puede tener solo dos valores: true o false.
-
-```java
-boolean esMayorDeEdad = true; // variable de tipo booleano
-```
-### Tipo de datos de caracteres:
-Se utilizan para almacenar caracteres individuales. Se pueden declarar como tipo char.
-
-```java
-char letra = 'a'; // variable de tipo caracter
-```
-### Tipo de datos de cadenas de caracteres:
-Se utilizan para almacenar cadenas de caracteres. Se pueden declarar como tipo String.
-
-```java
-String nombre = "Juan"; // variable de tipo cadena de caracteres
+String miString = "Hola mundo";
 ```
 
-### Tipo de datos de arrays:
-Se utilizan para almacenar conjuntos de valores. Pueden ser de un tipo de datos específico o una combinación de diferentes tipos de datos.
-
+### Array:
+Es una colección de elementos del mismo tipo de datos.
 ```java
-int[] numeros = {1, 2, 3, 4, 5}; // array de tipo entero
-String[] nombres = {"Juan", "María", "Pedro"}; // array de tipo cadena de caracteres
+int[] miArray = {1, 2, 3, 4, 5};
 ```
-Es importante mencionar que en Java, las variables deben ser declaradas antes de ser utilizadas. Además, cada variable tiene un ámbito (scope) que determina dónde puede ser accedida en el programa.
 
-También se pueden declarar variables constantes utilizando la palabra clave "final", lo que indica que su valor no puede ser modificado después de ser asignado.
-
+### Clase:
+Una clase es un plano o modelo para crear objetos. Las clases son tipos de datos personalizados y se utilizan para definir objetos en Java.
 ```java
-final double PI = 3.1416; // variable constante de tipo decimal
+public class Persona {
+  private String nombre;
+  private int edad;
+
+  public Persona(String nombre, int edad) {
+    this.nombre = nombre;
+    this.edad = edad;
+  }
+
+  public String getNombre() {
+    return nombre;
+  }
+
+  public int getEdad() {
+    return edad;
+  }
+}
+```
+
+### Enumeraciones:
+Una enumeración es un conjunto de valores constantes. Las enumeraciones se utilizan para definir un conjunto fijo de valores que se pueden asignar a una variable. 
+```java
+enum DiaSemana {
+  LUNES, MARTES, MIÉRCOLES, JUEVES, VIERNES, SÁBADO, DOMINGO
+}
+
+DiaSemana dia = DiaSemana.LUNES;
+```
+
+### Clases Wrapper:
+Son clases que envuelven o encapsulan tipos de datos primitivos para permitirles comportarse como objetos. 
+```java
+Integer miInteger = new Integer(10);
 ```
