@@ -1,65 +1,57 @@
 ![herencia](https://user-images.githubusercontent.com/75398496/233371295-2683894f-3ba3-465c-81d9-b09f9ed07e0e.png)
 
-# Herencia en Java:
-La herencia es un mecanismo de programación en el cual una clase adquiere las propiedades y los métodos de otra clase. La clase original se llama "clase base" o "superclase", y la clase que adquiere las propiedades se llama "clase derivada" o "subclase".
+# Paquetes y módulos en Java:
+En Java, los paquetes son utilizados para organizar y estructurar las clases y otros componentes de un programa. Un paquete es un conjunto de clases relacionadas que se agrupan juntas en una estructura de carpetas.
 
-En Java, la herencia se logra utilizando la palabra clave "extends". La clase derivada extiende la clase base y hereda todos sus campos y métodos públicos y protegidos. La clase derivada puede agregar nuevos campos y métodos, y también puede sobrescribir los métodos de la clase base.
+## Paquetes:
+Los paquetes son útiles para evitar conflictos de nombres entre las clases, ya que cada paquete tiene su propio espacio de nombres. Además, los paquetes pueden ser utilizados para controlar el acceso a las clases y otros componentes, utilizando los modificadores de acceso "public", "protected" y "private".
 
-Ejemplo:
-
-Aquí te proporciono un ejemplo de herencia en Java:
+Para definir una clase dentro de un paquete, se debe incluir la siguiente línea al principio del archivo de la clase:
 
 ```java
-public class Vehiculo {
-   private String marca;
-   private String modelo;
-
-   public Vehiculo(String marca, String modelo) {
-      this.marca = marca;
-      this.modelo = modelo;
-   }
-
-   public String getMarca() {
-      return marca;
-   }
-
-   public String getModelo() {
-      return modelo;
-   }
-}
+package nombrePaquete;
 ```
+Donde "nombrePaquete" es el nombre del paquete en el que se desea incluir la clase. Por ejemplo, si se desea incluir una clase llamada "MiClase" en un paquete llamado "miPaquete", se debe incluir la siguiente línea al principio del archivo de la clase "MiClase.java":
+
 ```java
-public class Coche extends Vehiculo {
-   private int numPuertas;
+package miPaquete;
+```
+Luego, para utilizar la clase desde otro archivo, se debe importar el paquete y la clase:
 
-   public Coche(String marca, String modelo, int numPuertas) {
-      super(marca, modelo);
-      this.numPuertas = numPuertas;
-   }
+```java
+import miPaquete.MiClase;
+```
 
-   public int getNumPuertas() {
-      return numPuertas;
-   }
+## Módulos:
+A partir de Java 9, se introdujeron los módulos como una forma de organizar y estructurar las clases y otros componentes de un programa de una manera más modular y segura. Los módulos son similares a los paquetes, pero proporcionan una forma más explícita de controlar el acceso a los componentes.
+
+Un módulo es un conjunto de paquetes que se agrupan juntos y se encapsulan para protegerlos de cambios externos. Un módulo puede especificar qué paquetes son accesibles y qué paquetes no lo son, utilizando las palabras clave "exports" y "requires" respectivamente.
+
+Para definir un módulo, se debe crear un archivo llamado "module-info.java" en el directorio raíz del módulo. Este archivo debe contener la siguiente información:
+
+```java
+module nombreModulo {
+   requires moduloRequerido;
+   exports nombrePaquete;
 }
 ```
 
-En este ejemplo, se define una clase "Vehiculo" con dos campos privados: "marca" y "modelo". Se proporcionan los métodos "getters" públicos para acceder a los valores de los campos privados.
+Donde "nombreModulo" es el nombre del módulo, "moduloRequerido" es el nombre de otro módulo que se requiere para ejecutar el actual, y "nombrePaquete" es el nombre del paquete que se exporta para ser utilizado por otros módulos.
 
-Luego, se define una clase "Coche" que extiende la clase "Vehiculo". La clase "Coche" tiene un campo privado adicional llamado "numPuertas", y un constructor que toma tres argumentos: "marca", "modelo" y "numPuertas". El constructor de la clase "Coche" utiliza la palabra clave "super" para llamar al constructor de la clase "Vehiculo" y pasar los argumentos "marca" y "modelo" al constructor de la clase base.
-
-La clase "Coche" también tiene un método "getter" público llamado "getNumPuertas()" que devuelve el valor del campo "numPuertas".
-
-Ejemplo:
-
-Aquí te proporciono un breve ejemplo de cómo utilizar la clase "Coche" con herencia en Java:
+Luego, para utilizar los componentes de un módulo desde otro módulo, se debe agregar el módulo requerido en el archivo "module-info.java" del módulo que desea utilizarlo:
 
 ```java
-public class EjemploHerencia {
-
-   public static void main(String[] args) {
-      Coche coche1 = new Coche("Ford", "Mustang", 2);
-      System.out.println(coche1.getMarca() + " " + coche1.getModelo() + " tiene " + coche1.getNumPuertas() + " puertas.");
-   }
+module miModulo {
+   requires moduloRequerido;
+   exports miPaquete;
 }
 ```
-En este ejemplo, se define una clase "EjemploHerencia" que contiene un método principal llamado "main". Dentro del método principal, se crea un objeto de la clase "Coche" utilizando el constructor que toma tres argumentos: "marca", "modelo" y "numPuertas". Luego, se llama al método "getter" público "getMarca()" de la clase "Vehiculo" para obtener el valor del campo "marca" del objeto creado, y se llama al método "getter" público "getModelo()" de la clase "Vehiculo" para obtener el valor del campo "modelo" del objeto creado. Finalmente, se llama al método "getter" público "getNumPuertas()" de la clase "Coche" para obtener el valor del campo "numPuertas"
+
+Y se debe agregar el módulo actual como un módulo requerido en el archivo "module-info.java" del módulo que desea utilizarlo:
+
+```java
+module otroModulo {
+   requires miModulo;
+   // ...
+}
+```
