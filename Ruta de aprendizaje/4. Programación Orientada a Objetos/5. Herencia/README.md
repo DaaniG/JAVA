@@ -1,64 +1,65 @@
-![encapsulacion](https://user-images.githubusercontent.com/75398496/233363058-4759600d-52a0-47f8-aff4-ef07ffc2b90f.png)
+![herencia](https://user-images.githubusercontent.com/75398496/233371295-2683894f-3ba3-465c-81d9-b09f9ed07e0e.png)
 
-# Encapsulación en Java:
-La encapsulación es una técnica de programación que consiste en ocultar los detalles internos de una clase y proteger los datos y el comportamiento de la misma. Se utiliza para mantener la integridad de los datos y prevenir cambios no autorizados desde fuera de la clase.
+# Herencia en Java:
+La herencia es un mecanismo de programación en el cual una clase adquiere las propiedades y los métodos de otra clase. La clase original se llama "clase base" o "superclase", y la clase que adquiere las propiedades se llama "clase derivada" o "subclase".
 
-En Java, la encapsulación se logra definiendo los campos de la clase como privados y proporcionando métodos públicos para acceder y modificar esos campos. Estos métodos se llaman "getters" y "setters", y se utilizan para obtener y establecer los valores de los campos privados respectivamente.
+En Java, la herencia se logra utilizando la palabra clave "extends". La clase derivada extiende la clase base y hereda todos sus campos y métodos públicos y protegidos. La clase derivada puede agregar nuevos campos y métodos, y también puede sobrescribir los métodos de la clase base.
 
 Ejemplo:
 
-Aquí te proporciono un ejemplo de clase con encapsulación en Java:
+Aquí te proporciono un ejemplo de herencia en Java:
 
 ```java
-public class Persona {
-   private String nombre;
-   private int edad;
+public class Vehiculo {
+   private String marca;
+   private String modelo;
 
-   public Persona(String nombre, int edad) {
-      this.nombre = nombre;
-      this.edad = edad;
+   public Vehiculo(String marca, String modelo) {
+      this.marca = marca;
+      this.modelo = modelo;
    }
 
-   public String getNombre() {
-      return nombre;
+   public String getMarca() {
+      return marca;
    }
 
-   public void setNombre(String nombre) {
-      this.nombre = nombre;
+   public String getModelo() {
+      return modelo;
+   }
+}
+```
+```java
+public class Coche extends Vehiculo {
+   private int numPuertas;
+
+   public Coche(String marca, String modelo, int numPuertas) {
+      super(marca, modelo);
+      this.numPuertas = numPuertas;
    }
 
-   public int getEdad() {
-      return edad;
-   }
-
-   public void setEdad(int edad) {
-      this.edad = edad;
+   public int getNumPuertas() {
+      return numPuertas;
    }
 }
 ```
 
-En este ejemplo, se define una clase "Persona" con dos campos privados: "nombre" y "edad". Se proporcionan los métodos "getters" y "setters" públicos para acceder y modificar los valores de los campos privados.
+En este ejemplo, se define una clase "Vehiculo" con dos campos privados: "marca" y "modelo". Se proporcionan los métodos "getters" públicos para acceder a los valores de los campos privados.
 
-El método "getNombre()" devuelve el valor del campo "nombre", y el método "setNombre()" establece el valor del campo "nombre".
+Luego, se define una clase "Coche" que extiende la clase "Vehiculo". La clase "Coche" tiene un campo privado adicional llamado "numPuertas", y un constructor que toma tres argumentos: "marca", "modelo" y "numPuertas". El constructor de la clase "Coche" utiliza la palabra clave "super" para llamar al constructor de la clase "Vehiculo" y pasar los argumentos "marca" y "modelo" al constructor de la clase base.
 
-El método "getEdad()" devuelve el valor del campo "edad", y el método "setEdad()" establece el valor del campo "edad".
+La clase "Coche" también tiene un método "getter" público llamado "getNumPuertas()" que devuelve el valor del campo "numPuertas".
 
 Ejemplo:
 
-Aquí te proporciono un breve ejemplo de cómo utilizar la clase "Persona" con encapsulación en Java:
+Aquí te proporciono un breve ejemplo de cómo utilizar la clase "Coche" con herencia en Java:
 
 ```java
-public class EjemploEncapsulacion {
+public class EjemploHerencia {
 
    public static void main(String[] args) {
-      Persona persona1 = new Persona("Juan", 25);
-      System.out.println(persona1.getNombre() + " tiene " + persona1.getEdad() + " años.");
-      persona1.setEdad(30);
-      System.out.println(persona1.getNombre() + " ahora tiene " + persona1.getEdad() + " años.");
+      Coche coche1 = new Coche("Ford", "Mustang", 2);
+      System.out.println(coche1.getMarca() + " " + coche1.getModelo() + " tiene " + coche1.getNumPuertas() + " puertas.");
    }
 }
 ```
-
-En este ejemplo, se define una clase "EjemploEncapsulacion" que contiene un método principal llamado "main". Dentro del método principal, se crea un objeto de la clase "Persona" utilizando el constructor que toma dos argumentos: "nombre" y "edad". Luego, se llama a los métodos públicos "getters" de la clase "Persona" para obtener los valores de los campos "nombre" y "edad" del objeto creado, y se imprimen en la consola.
-
-Luego, se llama al método "setter" público "setEdad()" de la clase "Persona" para establecer un nuevo valor para el campo "edad" del objeto creado. Finalmente, se llama a los métodos públicos "getters" de la clase "Persona" para obtener los nuevos valores de los campos "nombre" y "edad" del objeto creado, y se imprimen en la consola.
+En este ejemplo, se define una clase "EjemploHerencia" que contiene un método principal llamado "main". Dentro del método principal, se crea un objeto de la clase "Coche" utilizando el constructor que toma tres argumentos: "marca", "modelo" y "numPuertas". Luego, se llama al método "getter" público "getMarca()" de la clase "Vehiculo" para obtener el valor del campo "marca" del objeto creado, y se llama al método "getter" público "getModelo()" de la clase "Vehiculo" para obtener el valor del campo "modelo" del objeto creado. Finalmente, se llama al método "getter" público "getNumPuertas()" de la clase "Coche" para obtener el valor del campo "numPuertas"
