@@ -1,37 +1,38 @@
-![metyfun](https://user-images.githubusercontent.com/75398496/228928350-be86cb77-ee79-4416-a1f0-0f54d955b186.png)
+![constructores](https://user-images.githubusercontent.com/75398496/233360037-2f787eca-f6e7-44b4-b55b-b121633d59b9.png)
 
-# Los métodos y funciones en Java:
-Son bloques de código reutilizable que se pueden llamar desde otros lugares en el programa. Los métodos y funciones permiten al programador dividir el código en fragmentos más pequeños y más manejables, lo que facilita el mantenimiento y la legibilidad del código.
+# Constructores en Java:
+Los constructores en Java son métodos especiales que se utilizan para inicializar objetos de una clase. Los constructores tienen el mismo nombre que la clase y no devuelven ningún valor de retorno.
 
-La diferencia entre método y función es más bien semántica y no hay una distinción técnica clara entre ambos términos. En general, se suele utilizar el término "método" para referirse a una función que está definida dentro de una clase, mientras que el término "función" se utiliza para referirse a una operación o algoritmo independiente que puede ser llamado desde cualquier parte del código.
+La diferencia entre un constructor y un método normal es que un constructor se llama automáticamente cuando se crea un objeto de la clase, mientras que un método normal se llama explícitamente desde otro lugar del programa.
 
-En Java, los métodos y funciones se definen dentro de una clase y se pueden llamar desde cualquier parte del programa. Los métodos y funciones pueden recibir argumentos o parámetros, y pueden devolver un valor de retorno o no.
+En Java, un constructor se define con el nombre de la clase, seguido de una lista de argumentos entre paréntesis. Por ejemplo:
 
-Los métodos y funciones se definen mediante la palabra clave "public" o "private", seguida del tipo de dato que devuelven (o la palabra clave "void" si no devuelven nada), seguido del nombre del método y una lista de argumentos entre paréntesis. Por ejemplo:
 ```java
-public int sumar(int num1, int num2) {
-   int resultado = num1 + num2;
-   return resultado;
+public class Persona {
+   private String nombre;
+   private int edad;
+
+   public Persona(String nombre, int edad) {
+      this.nombre = nombre;
+      this.edad = edad;
+   }
 }
 ```
 
-En este ejemplo, se define un método público llamado "sumar" que toma dos argumentos de tipo entero y devuelve un valor de tipo entero.
+En este ejemplo, se define una clase "Persona" que tiene dos campos privados: "nombre" y "edad". También se define un constructor público que toma dos argumentos: "nombre" y "edad". Dentro del constructor, se inicializan los campos de la clase utilizando los valores de los argumentos.
 
 Ejemplo:
 
-Aquí te proporciono un breve ejemplo de métodos y funciones en Java:
+Aquí te proporciono un breve ejemplo de cómo utilizar un constructor en Java:
+
 ```java
-public class EjemploMetodos {
+public class EjemploConstructor {
 
    public static void main(String[] args) {
-      int resultado = sumar(3, 4);
-      System.out.println(resultado);
-   }
-
-   public static int sumar(int num1, int num2) {
-      int resultado = num1 + num2;
-      return resultado;
+      Persona persona1 = new Persona("Juan", 25);
+      System.out.println(persona1.getNombre() + " tiene " + persona1.getEdad() + " años.");
    }
 }
 ```
-En este ejemplo, se define una clase llamada "EjemploMetodos" que contiene un método principal llamado "main". Dentro del método principal, se llama al método "sumar" que toma dos argumentos y devuelve un valor, y se imprime el resultado en la consola.
+
+En este ejemplo, se define una clase "EjemploConstructor" que contiene un método principal llamado "main". Dentro del método principal, se crea un objeto de la clase "Persona" utilizando el constructor que toma dos argumentos: "nombre" y "edad". Luego, se llama a dos métodos públicos de la clase "Persona" para obtener los valores de los campos "nombre" y "edad" del objeto creado, y se imprimen en la consola.
