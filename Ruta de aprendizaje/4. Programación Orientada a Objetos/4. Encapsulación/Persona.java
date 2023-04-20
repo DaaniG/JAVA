@@ -1,5 +1,10 @@
 package Encapsulacion;
 
+/**
+ * Programación Orientada a Objetos. Encapsulación
+ * @author TitoDev
+ */
+
 public class Persona {
     private String nombre;
     private int edad;

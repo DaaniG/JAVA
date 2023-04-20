@@ -1,5 +1,10 @@
 package Encapsulacion;
 
+/**
+ * Programación Orientada a Objetos. Encapsulación
+ * @author TitoDev
+ */
+
 public class EjemploEncapsulacion {
     public static void main(String[] args) {
         Persona persona1 = new Persona("Juan", 25);
