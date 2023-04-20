@@ -1,4 +1,4 @@
-![herencia](https://user-images.githubusercontent.com/75398496/233371295-2683894f-3ba3-465c-81d9-b09f9ed07e0e.png)
+![paqmod](https://user-images.githubusercontent.com/75398496/233383256-fa421531-6a68-4c5e-8579-67f07943af23.png)
 
 # Paquetes y módulos en Java:
 En Java, los paquetes son utilizados para organizar y estructurar las clases y otros componentes de un programa. Un paquete es un conjunto de clases relacionadas que se agrupan juntas en una estructura de carpetas.
