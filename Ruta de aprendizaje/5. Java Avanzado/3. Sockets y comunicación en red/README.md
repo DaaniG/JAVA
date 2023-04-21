@@ -1,3 +1,5 @@
+![socket](https://user-images.githubusercontent.com/75398496/233703090-000d5b1c-0c52-4bf7-9a5f-68e0b86ac2df.png)
+
 # Sockets y comunicación de red en Java
 
 En términos generales, un socket es un extremo de una conexión de red bidireccional entre dos dispositivos en una red. En Java, se utilizan los sockets para establecer una conexión entre un servidor y uno o varios clientes y permitir que se comuniquen entre sí.
