@@ -30,8 +30,12 @@ for (Method method : methods) {
 }
 
 // Crear una instancia de la clase
-MyClass obj = (MyClass) c.newInstance();
-En este ejemplo, se utiliza la clase MyClass como ejemplo de una clase que se examina mediante reflection. Se utiliza la clase Class para obtener información sobre la clase, incluyendo su nombre, campos y métodos. También se crea una nueva instancia de la clase utilizando el método newInstance().
+try {
+    MyClass obj = (MyClass) c.newInstance();
+} catch (InstantiationException | IllegalAccessException e) {
+    e.printStackTrace();
+}
 ```
+En este ejemplo, se utiliza la clase MyClass como ejemplo de una clase que se examina mediante reflection. Se utiliza la clase Class para obtener información sobre la clase, incluyendo su nombre, campos y métodos. También se crea una nueva instancia de la clase utilizando el método newInstance().
 
 Es importante tener en cuenta que el uso de reflection puede afectar el rendimiento y la seguridad de una aplicación, ya que permite acceder a partes del código que normalmente no están disponibles. Por lo tanto, se recomienda utilizar la reflection con precaución y solo cuando sea necesario.
