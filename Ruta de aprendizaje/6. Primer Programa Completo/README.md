@@ -1,7 +1,22 @@
 ![primerprograma](https://user-images.githubusercontent.com/75398496/233857513-9203b441-f72a-431b-acbb-2b3f94f5e422.png)
 
 # Chat MVC
-Este es un programa de chat básico que sigue el patrón de diseño Modelo-Vista-Controlador (MVC). El programa se compone de cuatro clases:
+Este es un programa de chat básico que sigue el patrón de diseño Modelo-Vista-Controlador (MVC). 
+
+### El patrón de diseño MVC (Modelo-Vista-Controlador) 
+Es un patrón arquitectónico ampliamente utilizado en el desarrollo de aplicaciones de software.
+
+El patrón MVC divide una aplicación en tres componentes principales:
+
+El Modelo (Model): Es responsable de representar los datos y la lógica de negocios de la aplicación. El modelo actúa como una capa de acceso a datos que maneja la persistencia de los datos y cualquier lógica necesaria para manipularlos.
+
+La Vista (View): Es responsable de mostrar la información al usuario y de proporcionar una interfaz de usuario (UI) para interactuar con la aplicación. La vista se encarga de la presentación de datos al usuario y la interacción con el mismo.
+
+El Controlador (Controller): Es responsable de recibir las solicitudes del usuario, procesarlas y coordinar la interacción entre el Modelo y la Vista. El controlador se encarga de recibir la entrada del usuario y actualizar el modelo y la vista en consecuencia.
+
+El patrón MVC ayuda a separar las preocupaciones de la aplicación, lo que facilita la creación de aplicaciones escalables y mantenibles. Al dividir la aplicación en componentes, los desarrolladores pueden trabajar en diferentes áreas sin interferir en el trabajo de los demás. También permite la reutilización de componentes y la fácil modificación de la aplicación sin afectar a otros componentes.
+
+El programa se compone de cuatro clases:
 
 ## ChatModel: 
 La clase ChatModel contiene una lista de mensajes y los métodos necesarios para agregar y cargar mensajes desde y hacia un archivo.
